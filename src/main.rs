@@ -4,7 +4,7 @@ mod routes;
 mod startup;
 
 use newsletter::configuration::get_configuration;
-use sqlx::{PgConnection, Connection};
+use sqlx::{Connection, PgConnection};
 use startup::run;
 use std::net::TcpListener;
 
