@@ -3,5 +3,7 @@
 
 [target.aarch64-apple-darwin]
 #rustflags = ["-C", "link-arg=-fuse-ld=/usr/local/bin/zld"]
-
 # todo: fix my zld install issue, (this will decrease build times)
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "linker=clang", "-C", "link-arg=-fuse-ld=lld"]
