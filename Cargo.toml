@@ -1,6 +1,6 @@
 [package]
 edition = "2021"
-name = "zero2prod"
+name = "newsletter"
 version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -9,11 +9,12 @@ version = "0.1.0"
 path = "src/lib.rs"
 
 [[bin]]
-name = "zero2prod"
+name = "newsletter"
 path = "src/main.rs"
 
 [dependencies]
 actix-web = "4"
+config = "0.11"
 serde = {version = "1", features = ["derive"]}
 tokio = {version = "1", features = ["macros", "rt-multi-thread"]}
 

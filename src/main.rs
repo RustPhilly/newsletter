@@ -1,11 +1,16 @@
 //! main.rs
 
-use std::net::TcpListener;
+mod routes;
+mod startup;
 
-use zero2prod::run;
+use newsletter::configuration::get_configuration;
+use startup::run;
+use std::net::TcpListener;
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
-    let listener = TcpListener::bind("127.0.0.1:0").expect("Failed to bind to random port");
+    let configuration = get_configuration().expect("Failed to read configuration.");
+    let address = format!("127.0.0.1:{}", configuration.application_port);
+    let listener = TcpListener::bind(address).expect("Failed to bind to random port");
     run(listener)?.await
 }
