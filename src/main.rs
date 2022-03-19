@@ -4,8 +4,8 @@ mod routes;
 mod startup;
 
 use newsletter::configuration::get_configuration;
-use startup::run;
 use sqlx::PgPool;
+use startup::run;
 use std::net::TcpListener;
 
 #[tokio::main]
