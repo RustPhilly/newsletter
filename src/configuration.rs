@@ -27,6 +27,7 @@ impl DatabaseSettings {
         ))
     }
 
+    #[allow(dead_code)] // this method is only used in tests
     pub fn connection_string_without_db(&self) -> Secret<String> {
         Secret::new(format!(
             "postgres://{}:{}@{}:{}",

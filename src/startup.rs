@@ -1,5 +1,4 @@
 use actix_web::dev::Server;
-use actix_web::middleware::Logger;
 use actix_web::{web, App, HttpServer};
 use sqlx::PgPool;
 use std::net::TcpListener;

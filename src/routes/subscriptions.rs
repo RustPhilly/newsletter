@@ -1,7 +1,6 @@
 //! src/routes/subscriptions.rs
 
 use chrono::Utc;
-use tracing::Instrument;
 use uuid::Uuid;
 
 use actix_web::{web, HttpResponse};
