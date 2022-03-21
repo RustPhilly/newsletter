@@ -5,6 +5,7 @@ This repo is the result of Rust Philly members reviewing each chapter of https:/
 If you're looking for something to quickly deploy for yourself, take a look at Luca's full source code here: https://github.com/LukeMathWalker/zero-to-production
 
 ### Trade-off
+Rust Philly is working through each chapter to Zero2Prod book. We figure it would be neat to deploy our own production-grade newsletter service, but we also are in this meetup to level-up in Rust, so that we can be more effective in our day jobs. There is a trade-off here to acknowledge.
 
 #### Fork and deploy, learn implementation details later
 PROS:
